@@ -6,7 +6,7 @@
   const main = document.querySelector('#project');
   if (index < 0) {
     document.title = '未找到作品 — IhsushI';
-    main.innerHTML = '<div class="error-page"><p class="eyeline">PROJECT NOT FOUND</p><h1>这个作品还不在作品集中。</h1><p>可以从目录中选择其他作品。</p><a href="catalog.html?v=20261004-release-1">返回作品目录 ↗</a></div>';
+    main.innerHTML = '<div class="error-page"><p class="eyeline">PROJECT NOT FOUND</p><h1>这个作品还不在作品集中。</h1><p>可以从目录中选择其他作品。</p><a href="catalog.html?v=20261005-release-2">返回作品目录 ↗</a></div>';
     document.body.dataset.ready = 'true';
     return;
   }
@@ -28,7 +28,7 @@
   main.style.setProperty('--cover', p.color || '#263448');
   main.style.setProperty('--foil', p.foil || '#d9c4a0');
   main.innerHTML = `
-    <div class="film-heading"><div><p class="eyeline">${number} / ${String(projects.length).padStart(2, '0')}</p><h1 class="page-title work-title">${escape(p.chinese)}</h1><p class="subtitle english-title">${escape(p.title)}</p></div><a class="project-index-link" href="catalog.html?v=20261004-release-1">全部作品 ↗</a></div>
+    <div class="film-heading"><div><p class="eyeline">${number} / ${String(projects.length).padStart(2, '0')}</p><h1 class="page-title work-title">${escape(p.chinese)}</h1><p class="subtitle english-title">${escape(p.title)}</p></div><a class="project-index-link" href="catalog.html?v=20261005-release-2">全部作品 ↗</a></div>
     <section class="project-film" aria-label="${escape(p.chinese)}视频演示">${media}</section>
     <section class="film-intro" aria-labelledby="intro-title"><div class="film-description"><h2 id="intro-title">作品简介</h2><p>${escape(p.summary)}</p>${video && external ? `<p class="alternate-video">${external}</p>` : ''}</div><dl class="project-meta">${(p.meta || []).slice(0, 4).map(([label,value]) => `<div><dt>${escape(label)}</dt><dd>${escape(value)}</dd></div>`).join('')}</dl></section>
     <a class="next-project" href="project.html?id=${encodeURIComponent(next.id)}&v=${encodeURIComponent(window.PORTFOLIO.revision)}"><span>NEXT PROJECT / 下一个作品</span><strong>${escape(next.chinese)} ↗</strong><small>${escape(next.title)}</small></a>`;

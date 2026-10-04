@@ -13,7 +13,7 @@ window.PORTFOLIO = {
       "color": "#446457",
       "foil": "#e5efda",
       "discType": "iridescent",
-      "cover": "assets/art/refraction.png",
+      "cover": "assets/art/refraction.webp",
       "summary": "围绕变小、复原与瞬间变大的能力，展开一段逃离主题的第三人称动作冒险。在线性序章中，通过尺度变化组织探索、穿越与近战体验。",
       "meta": [
         [
@@ -185,5 +185,5 @@ window.PORTFOLIO = {
     },
     "summary": "新的作品正在慢慢成形。这张唱片先留在这里，等下一段故事。"
   },
-  "revision": "20261004-release-1"
+  "revision": "20261005-release-2"
 };

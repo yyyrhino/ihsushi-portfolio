@@ -33,8 +33,8 @@ let pointerDown = null, lastMove = null, suppressedClick = 0, velocity = 0, visi
 let snapshot = null, raf = 0, lastTime = 0, returnKeyboardFocus = false;
 const rigs = [], covers = [];
 let previewHover=false, discSlide=1.3, enterProgress=0, flight=null, returnHoldUntil=0, navigating=false;
-const artImage=new Image();artImage.src='assets/art/refraction.png';await artImage.decode();
-const playerTexture=await new THREE.TextureLoader().loadAsync('assets/art/player.png');playerTexture.colorSpace=THREE.SRGBColorSpace;
+const artImage=new Image();artImage.src='assets/art/refraction.webp';
+const [,playerTexture]=await Promise.all([artImage.decode(),new THREE.TextureLoader().loadAsync('assets/art/player.webp')]);playerTexture.colorSpace=THREE.SRGBColorSpace;
 const player=new THREE.Mesh(new THREE.PlaneGeometry(4.25,5.05),new THREE.MeshBasicMaterial({map:playerTexture,transparent:true,depthWrite:false}));scene.add(player);player.visible=false;
 // The spindle is authored at pixel (571, 564) in the 1145 x 1374 player artwork.
 const playerSpindle=new THREE.Vector3((571/1145-.5)*4.25,(.5-564/1374)*5.05,0);
