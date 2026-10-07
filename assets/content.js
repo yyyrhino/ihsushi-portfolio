@@ -1,17 +1,31 @@
-// 四个正式作品；预留专辑只在首页陈列，不创建详情页。
+// 八个正式作品；预留专辑只在首页陈列，不创建详情页。
 window.PORTFOLIO = {
   "name": "叶世续",
   "brand": "IhsushI",
   "categories": [
-    {"id": "game", "label": "游戏"},
-    {"id": "architecture", "label": "建筑"},
-    {"id": "exhibition", "label": "展览"},
-    {"id": "other", "label": "其他"}
+    {
+      "id": "game",
+      "label": "游戏"
+    },
+    {
+      "id": "architecture",
+      "label": "建筑"
+    },
+    {
+      "id": "exhibition",
+      "label": "展览"
+    },
+    {
+      "id": "other",
+      "label": "其他"
+    }
   ],
   "projects": [
     {
       "id": "volume-06",
-      "collections": ["game"],
+      "collections": [
+        "game"
+      ],
       "title": "Grow Shrink Venture",
       "chinese": "尖尖奇旅",
       "shortTitle": "尖尖奇旅",
@@ -49,11 +63,14 @@ window.PORTFOLIO = {
         "label": "尖尖奇旅 · 关卡演示",
         "durationLabel": "16:44",
         "poster": "assets/video-posters/volume-06.jpg"
-      }
+      },
+      "coverPreview": "assets/covers/grow-shrink-cover-preview.webp"
     },
     {
       "id": "volume-01",
-      "collections": ["game"],
+      "collections": [
+        "game"
+      ],
       "title": "The Curse of Time",
       "chinese": "时之诅咒",
       "shortTitle": "时之诅咒",
@@ -96,11 +113,14 @@ window.PORTFOLIO = {
         "label": "时之诅咒 · 关卡流程演示",
         "durationLabel": "14:48",
         "poster": "assets/video-posters/volume-01.jpg"
-      }
+      },
+      "coverPreview": "assets/covers/curse-of-time-cover-preview.webp"
     },
     {
       "id": "volume-02",
-      "collections": ["game"],
+      "collections": [
+        "game"
+      ],
       "title": "Phase Dagger: Genesis Dossier",
       "chinese": "相位匕首：创生档案",
       "shortTitle": "相位匕首",
@@ -144,11 +164,15 @@ window.PORTFOLIO = {
         "label": "相位匕首 · 关卡白模演示",
         "durationLabel": "08:52",
         "poster": "assets/video-posters/volume-02.jpg"
-      }
+      },
+      "coverPreview": "assets/covers/phase-dagger-cover-preview.webp"
     },
     {
       "id": "volume-03",
-      "collections": ["game", "other"],
+      "collections": [
+        "game",
+        "other"
+      ],
       "title": "The Dantean Spire",
       "chinese": "迷失之塔",
       "shortTitle": "迷失之塔",
@@ -191,7 +215,367 @@ window.PORTFOLIO = {
         "label": "迷失之塔 · 动画短片",
         "durationLabel": "04:17",
         "poster": "assets/video-posters/volume-03.jpg"
-      }
+      },
+      "coverPreview": "assets/covers/dantean-spire-cover-preview.webp"
+    },
+    {
+      "id": "thought-cabinet",
+      "title": "Thought Cabinet",
+      "chinese": "思维阁",
+      "category": "住宅设计 / 空间叙事",
+      "date": "2022.11",
+      "color": "#455975",
+      "labelColor": "#586da1",
+      "sleeveColor": "#858e9e",
+      "sleeveTopColor": "#a5acb9",
+      "sleeveInk": "#f2f1eb",
+      "foil": "#dce1ee",
+      "discType": "iridescent",
+      "summary": "以《极乐迪斯科》中的侦探哈里为对象，设计一处容纳思考、情绪释放与冥想的住宅。将心理状态转译为空间与日常行为，通过层叠庭院、光线变化和过渡空间，为破碎的自我建立可以重新整合的归所。",
+      "collections": [
+        "architecture"
+      ],
+      "shortTitle": "思维阁",
+      "format": "个人作品",
+      "mediaType": "image",
+      "cover": "assets/covers/thought-cabinet-cover.webp",
+      "hero": {
+        "src": "assets/architecture/thought-cabinet/hero.webp",
+        "alt": "思维阁建筑效果图"
+      },
+      "meta": [
+        [
+          "项目形式",
+          "个人学术设计"
+        ],
+        [
+          "项目地点",
+          "爱沙尼亚 · 塔林"
+        ],
+        [
+          "完成时间",
+          "2022.11"
+        ],
+        [
+          "设计主题",
+          "心理状态 · 庭院与光线"
+        ]
+      ],
+      "boards": [
+        {
+          "src": "assets/architecture/thought-cabinet/spread-01.webp",
+          "fullSrc": "assets/architecture/thought-cabinet/spread-01-full.webp",
+          "alt": "思维阁 · 作品概览原始图版",
+          "label": "作品概览",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "4–5"
+        },
+        {
+          "src": "assets/architecture/thought-cabinet/spread-02.webp",
+          "fullSrc": "assets/architecture/thought-cabinet/spread-02-full.webp",
+          "alt": "思维阁 · 人物与场地原始图版",
+          "label": "人物与场地",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "6–7"
+        },
+        {
+          "src": "assets/architecture/thought-cabinet/spread-03.webp",
+          "fullSrc": "assets/architecture/thought-cabinet/spread-03-full.webp",
+          "alt": "思维阁 · 概念与行为模式原始图版",
+          "label": "概念与行为模式",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "8–9"
+        },
+        {
+          "src": "assets/architecture/thought-cabinet/spread-04.webp",
+          "fullSrc": "assets/architecture/thought-cabinet/spread-04-full.webp",
+          "alt": "思维阁 · 结构与平面原始图版",
+          "label": "结构与平面",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "10–11"
+        },
+        {
+          "src": "assets/architecture/thought-cabinet/spread-05.webp",
+          "fullSrc": "assets/architecture/thought-cabinet/spread-05-full.webp",
+          "alt": "思维阁 · 空间体验与剖面原始图版",
+          "label": "空间体验与剖面",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "12–13"
+        }
+      ],
+      "coverPreview": "assets/covers/thought-cabinet-cover-preview.webp"
+    },
+    {
+      "id": "obstruction",
+      "title": "The Obstruction",
+      "chinese": "阻隔",
+      "category": "纪念馆设计",
+      "date": "2021.04",
+      "color": "#807157",
+      "labelColor": "#c59948",
+      "sleeveColor": "#a39880",
+      "sleeveTopColor": "#c5bba4",
+      "sleeveInk": "#f6f2e8",
+      "foil": "#eee0c3",
+      "discType": "vinyl",
+      "summary": "在斯洛伐克布拉迪斯拉发的废弃导弹基地中，设计一座铁幕历史纪念馆。以“阻隔”为核心，将展厅与沉思室嵌入连续拱廊，通过路径、视线、墙体和光线的限制，让参观者在行进中体会自由与禁锢之间的张力。",
+      "collections": [
+        "architecture"
+      ],
+      "shortTitle": "阻隔",
+      "format": "个人作品",
+      "mediaType": "image",
+      "cover": "assets/covers/obstruction-cover.webp",
+      "hero": {
+        "src": "assets/architecture/obstruction/hero.webp",
+        "alt": "阻隔建筑效果图"
+      },
+      "meta": [
+        [
+          "项目形式",
+          "个人学术设计"
+        ],
+        [
+          "项目地点",
+          "斯洛伐克 · 布拉迪斯拉发"
+        ],
+        [
+          "完成时间",
+          "2021.04"
+        ],
+        [
+          "设计主题",
+          "空间阻隔 · 历史记忆"
+        ]
+      ],
+      "boards": [
+        {
+          "src": "assets/architecture/obstruction/spread-01.webp",
+          "fullSrc": "assets/architecture/obstruction/spread-01-full.webp",
+          "alt": "阻隔 · 作品概览原始图版",
+          "label": "作品概览",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "14–15"
+        },
+        {
+          "src": "assets/architecture/obstruction/spread-02.webp",
+          "fullSrc": "assets/architecture/obstruction/spread-02-full.webp",
+          "alt": "阻隔 · 历史与场地原始图版",
+          "label": "历史与场地",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "16–17"
+        },
+        {
+          "src": "assets/architecture/obstruction/spread-03.webp",
+          "fullSrc": "assets/architecture/obstruction/spread-03-full.webp",
+          "alt": "阻隔 · 概念与结构原始图版",
+          "label": "概念与结构",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "18–19"
+        },
+        {
+          "src": "assets/architecture/obstruction/spread-04.webp",
+          "fullSrc": "assets/architecture/obstruction/spread-04-full.webp",
+          "alt": "阻隔 · 展厅体验与平面原始图版",
+          "label": "展厅体验与平面",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "20–21"
+        },
+        {
+          "src": "assets/architecture/obstruction/spread-05.webp",
+          "fullSrc": "assets/architecture/obstruction/spread-05-full.webp",
+          "alt": "阻隔 · 整体空间与剖面原始图版",
+          "label": "整体空间与剖面",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "22–23"
+        }
+      ],
+      "coverPreview": "assets/covers/obstruction-cover-preview.webp"
+    },
+    {
+      "id": "city-lung",
+      "title": "The Lung of City",
+      "chinese": "城市之肺",
+      "category": "公共建筑 / 动线系统",
+      "date": "2023.02",
+      "color": "#865f5d",
+      "labelColor": "#b46b69",
+      "sleeveColor": "#ac8f87",
+      "sleeveTopColor": "#c7aaa2",
+      "sleeveInk": "#f7efeb",
+      "foil": "#ecd7ce",
+      "discType": "transparent",
+      "summary": "以厦门农产品批发市场为对象，结合在家庭批发店工作的观察，重组人、车与货物交错的交易系统。通过分层交通、免下车交易和内部货物运输，将收货、展示与销售组织为更安全、高效的城市物流节点。",
+      "collections": [
+        "architecture"
+      ],
+      "shortTitle": "城市之肺",
+      "format": "个人作品",
+      "mediaType": "image",
+      "cover": "assets/covers/city-lung-cover.webp",
+      "hero": {
+        "src": "assets/architecture/city-lung/hero.webp",
+        "alt": "城市之肺建筑效果图"
+      },
+      "meta": [
+        [
+          "项目形式",
+          "个人学术设计"
+        ],
+        [
+          "项目地点",
+          "中国 · 厦门"
+        ],
+        [
+          "完成时间",
+          "2023.02"
+        ],
+        [
+          "设计主题",
+          "人车分流 · 交易与物流"
+        ]
+      ],
+      "boards": [
+        {
+          "src": "assets/architecture/city-lung/spread-01.webp",
+          "fullSrc": "assets/architecture/city-lung/spread-01-full.webp",
+          "alt": "城市之肺 · 作品概览原始图版",
+          "label": "作品概览",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "24–25"
+        },
+        {
+          "src": "assets/architecture/city-lung/spread-02.webp",
+          "fullSrc": "assets/architecture/city-lung/spread-02-full.webp",
+          "alt": "城市之肺 · 场地与市场分析原始图版",
+          "label": "场地与市场分析",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "26–27"
+        },
+        {
+          "src": "assets/architecture/city-lung/spread-03.webp",
+          "fullSrc": "assets/architecture/city-lung/spread-03-full.webp",
+          "alt": "城市之肺 · 分层交通与交易系统原始图版",
+          "label": "分层交通与交易系统",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "28–29"
+        },
+        {
+          "src": "assets/architecture/city-lung/spread-04.webp",
+          "fullSrc": "assets/architecture/city-lung/spread-04-full.webp",
+          "alt": "城市之肺 · 平面与空间体验原始图版",
+          "label": "平面与空间体验",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "30–31"
+        }
+      ],
+      "coverPreview": "assets/covers/city-lung-cover-preview.webp"
+    },
+    {
+      "id": "ruins-garden",
+      "title": "Ruins Botanical Garden",
+      "chinese": "废墟植物园",
+      "category": "毕业设计 / 景观建筑",
+      "date": "2023.06",
+      "color": "#67745c",
+      "labelColor": "#8c9a72",
+      "sleeveColor": "#939a83",
+      "sleeveTopColor": "#b4bca3",
+      "sleeveInk": "#f2f2e7",
+      "foil": "#e0e5cf",
+      "discType": "vinyl",
+      "summary": "面向山东古窑村在工业化与旅游开发中的变迁，尝试保留废弃建筑与自发生长的植物，将场地转化为承载土地记忆的植物园。以相互联结的庭院组织参观、研究与教学空间，让人工建筑逐步过渡到自然环境，重新建立人与土地的联系。",
+      "collections": [
+        "architecture"
+      ],
+      "shortTitle": "废墟植物园",
+      "format": "个人作品",
+      "mediaType": "image",
+      "cover": "assets/covers/ruins-garden-cover.webp",
+      "hero": {
+        "src": "assets/architecture/ruins-garden/hero.webp",
+        "alt": "废墟植物园建筑效果图"
+      },
+      "meta": [
+        [
+          "项目形式",
+          "个人毕业设计"
+        ],
+        [
+          "项目地点",
+          "中国 · 山东古窑村"
+        ],
+        [
+          "完成时间",
+          "2023.06"
+        ],
+        [
+          "设计主题",
+          "土地记忆 · 自然与庭院"
+        ]
+      ],
+      "boards": [
+        {
+          "src": "assets/architecture/ruins-garden/spread-01.webp",
+          "fullSrc": "assets/architecture/ruins-garden/spread-01-full.webp",
+          "alt": "废墟植物园 · 作品概览原始图版",
+          "label": "作品概览",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "32–33"
+        },
+        {
+          "src": "assets/architecture/ruins-garden/spread-02.webp",
+          "fullSrc": "assets/architecture/ruins-garden/spread-02-full.webp",
+          "alt": "废墟植物园 · 场地与村落历史原始图版",
+          "label": "场地与村落历史",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "34–35"
+        },
+        {
+          "src": "assets/architecture/ruins-garden/spread-03.webp",
+          "fullSrc": "assets/architecture/ruins-garden/spread-03-full.webp",
+          "alt": "废墟植物园 · 建筑、植物与行为类型原始图版",
+          "label": "建筑、植物与行为类型",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "36–37"
+        },
+        {
+          "src": "assets/architecture/ruins-garden/spread-04.webp",
+          "fullSrc": "assets/architecture/ruins-garden/spread-04-full.webp",
+          "alt": "废墟植物园 · 庭院概念与平面原始图版",
+          "label": "庭院概念与平面",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "38–39"
+        },
+        {
+          "src": "assets/architecture/ruins-garden/spread-05.webp",
+          "fullSrc": "assets/architecture/ruins-garden/spread-05-full.webp",
+          "alt": "废墟植物园 · 空间体验与构造原始图版",
+          "label": "空间体验与构造",
+          "width": 2100,
+          "height": 1490,
+          "printedPages": "40–41"
+        }
+      ],
+      "coverPreview": "assets/covers/ruins-garden-cover-preview.webp"
     }
   ],
   "pendingAlbum": {
@@ -215,5 +599,5 @@ window.PORTFOLIO = {
     },
     "summary": "新的作品正在慢慢成形。这张唱片先留在这里，等下一段故事。"
   },
-  "revision": "20261007-multi-category-1"
+  "revision": "20261008-architecture-fast-1"
 };

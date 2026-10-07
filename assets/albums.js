@@ -2,6 +2,14 @@ import * as THREE from 'three';
 
 const works = window.PORTFOLIO.projects;
 const projects = [...works, window.PORTFOLIO.pendingAlbum];
+// Start covers alongside the other artwork; keep decoded images for the first frame.
+const coverImagesPromise = Promise.all(projects.map(async project => {
+ const source = project.coverPreview || project.cover;
+ if (!source) return null;
+ const image = new Image(); image.src = source;
+ try { await image.decode(); return image; }
+ catch { console.warn('Cover unavailable:', source); return null; }
+}));
 const categories = window.PORTFOLIO.categories;
 const categoryLabel = id => categories.find(category => category.id === id)?.label;
 const emptyCategories = categories.filter(c=>!works.some(work=>work.collections.includes(c.id)));
@@ -134,12 +142,7 @@ const shellMaterials=projects.map(p=>{
  };
 });
 // Decode each cover before showing the collection, so no sample artwork flashes.
-const coverImages = await Promise.all(projects.map(async project => {
- if (!project.cover) return null;
- const image = new Image(); image.src = project.cover;
- try { await image.decode(); return image; }
- catch { console.warn('Cover unavailable:', project.cover); return null; }
-}));
+const coverImages = await coverImagesPromise;
 function coverTexture(project,index){
  const c=document.createElement('canvas');c.width=c.height=1024;const ctx=c.getContext('2d');
  const strip=132,accent=project.labelColor||project.color;
@@ -169,7 +172,7 @@ function coverTexture(project,index){
  ctx.fillStyle='#aab0b0';for(const [y,length] of [[743,81],[751,66],[759,74],[783,41]])ctx.fillRect(20,y,length,1);
  ctx.fillStyle='#4a555b';ctx.fillRect(20,818,15,2);ctx.fillRect(20,818,2,15);ctx.fillRect(97,818,15,2);ctx.fillRect(110,818,2,15);
  ctx.fillStyle=accent;ctx.fillRect(12,873,108,139);
- ctx.fillStyle='#f2f1eb';ctx.font='12px Arial';ctx.fillText(project.pending?'NEXT':String(index+1).padStart(2,'0')+' / 04',23,985);
+ ctx.fillStyle='#f2f1eb';ctx.font='12px Arial';ctx.fillText(project.pending?'NEXT':String(index+1).padStart(2,'0')+' / '+String(works.length).padStart(2,'0'),23,985);
  ctx.fillStyle='#00000013';ctx.fillRect(strip-1,0,1,1024);
  const tex=new THREE.CanvasTexture(c);tex.colorSpace=THREE.SRGBColorSpace;tex.anisotropy=renderer.capabilities.getMaxAnisotropy();
  return tex;
