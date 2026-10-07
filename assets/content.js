@@ -2,18 +2,29 @@
 window.PORTFOLIO = {
   "name": "叶世续",
   "brand": "IhsushI",
+  "categories": [
+    {"id": "game", "label": "游戏"},
+    {"id": "architecture", "label": "建筑"},
+    {"id": "exhibition", "label": "展览"},
+    {"id": "other", "label": "其他"}
+  ],
   "projects": [
     {
       "id": "volume-06",
+      "collections": ["game"],
       "title": "Grow Shrink Venture",
       "chinese": "尖尖奇旅",
       "shortTitle": "尖尖奇旅",
       "category": "关卡设计",
       "format": "个人作品",
       "color": "#446457",
+      "labelColor": "#9e8e70",
+      "sleeveColor": "#93988f",
+      "sleeveTopColor": "#b4b8ae",
+      "sleeveInk": "#f1f0e9",
       "foil": "#e5efda",
       "discType": "iridescent",
-      "cover": "assets/art/refraction.webp",
+      "cover": "assets/covers/grow-shrink-cover.webp",
       "summary": "围绕变小、复原与瞬间变大的能力，展开一段逃离主题的第三人称动作冒险。在线性序章中，通过尺度变化组织探索、穿越与近战体验。",
       "meta": [
         [
@@ -42,15 +53,20 @@ window.PORTFOLIO = {
     },
     {
       "id": "volume-01",
+      "collections": ["game"],
       "title": "The Curse of Time",
       "chinese": "时之诅咒",
       "shortTitle": "时之诅咒",
       "category": "关卡设计",
       "format": "个人作品",
       "color": "#243b50",
+      "labelColor": "#616871",
+      "sleeveColor": "#686b6b",
+      "sleeveTopColor": "#939794",
+      "sleeveInk": "#e9e8e2",
       "foil": "#cbdbe9",
       "discType": "iridescent",
-      "cover": "assets/works/time-cover.webp",
+      "cover": "assets/covers/curse-of-time-cover.webp",
       "summary": "在过去与现在的城堡间穿梭，以时间切换改变路线、观察敌人并解决障碍。这段潜入主题的线性序章，将攀爬、近战与双时空机制逐步串联。",
       "hero": {
         "src": "assets/works/time-castle.webp",
@@ -84,15 +100,21 @@ window.PORTFOLIO = {
     },
     {
       "id": "volume-02",
+      "collections": ["game"],
       "title": "Phase Dagger: Genesis Dossier",
       "chinese": "相位匕首：创生档案",
       "shortTitle": "相位匕首",
       "category": "关卡设计",
       "format": "个人作品",
       "color": "#28646b",
+      "labelColor": "#ad4055",
+      "sleeveColor": "#3c4b5e",
+      "sleeveTopColor": "#526274",
+      "sleeveInk": "#dde0df",
+      "spineTitle": "PHASE DAGGER",
       "foil": "#d8efeb",
       "discType": "transparent",
-      "cover": "assets/works/phase-cover.webp",
+      "cover": "assets/covers/phase-dagger-cover.webp",
       "summary": "围绕匕首瞬移与子弹时间展开的偷窃任务。通过高层建筑间的落点判断与室内外空间切换，串联探索、潜入和撤退三个阶段。",
       "hero": {
         "src": "assets/works/phase-plan.webp",
@@ -126,15 +148,20 @@ window.PORTFOLIO = {
     },
     {
       "id": "volume-03",
+      "collections": ["game", "other"],
       "title": "The Dantean Spire",
       "chinese": "迷失之塔",
       "shortTitle": "迷失之塔",
       "category": "空间叙事 / 动画",
       "format": "小组作品",
       "color": "#a47d37",
+      "labelColor": "#b99a69",
+      "sleeveColor": "#bda984",
+      "sleeveTopColor": "#d1c2a5",
+      "sleeveInk": "#48433b",
       "foil": "#f5e7c5",
       "discType": "vinyl",
-      "cover": "assets/works/spire-cover.webp",
+      "cover": "assets/covers/dantean-spire-cover.webp",
       "summary": "以循环空间为叙事核心的小组动画短片。中心塔与外围回廊相互嵌套，通过上升、下降、轮转与超越，让空间、路径和氛围共同讲述迷失的过程。",
       "hero": {
         "src": "assets/works/spire-gold.webp",
@@ -176,6 +203,9 @@ window.PORTFOLIO = {
     "category": "未来作品",
     "format": "待更新",
     "color": "#756a57",
+    "sleeveColor": "#6c6255",
+    "sleeveTopColor": "#8b8070",
+    "sleeveInk": "#e2dcd0",
     "foil": "#ece4d3",
     "cover": "assets/art/coming-soon-cat.jpg",
     "coverCrop": {
@@ -185,5 +215,5 @@ window.PORTFOLIO = {
     },
     "summary": "新的作品正在慢慢成形。这张唱片先留在这里，等下一段故事。"
   },
-  "revision": "20261005-release-2"
+  "revision": "20261007-multi-category-1"
 };

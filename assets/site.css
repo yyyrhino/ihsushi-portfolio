@@ -49,3 +49,38 @@
 
 .page-header .brand img{mask-image:none;mix-blend-mode:normal}
 @media(min-width:801px){.project-player video{max-height:min(65vh,calc(100svh - 350px))}}
+
+/* A slim clear edge lets each cover's liner colour show through. */
+.catalog-cover{box-sizing:border-box;padding:3px;container-type:inline-size;border:1px solid #8d89823d;background:linear-gradient(135deg,#ffffff50,#ffffff08 38%,#00000018),var(--sleeve-color,var(--cover));box-shadow:inset 0 1px 0 #ffffff40,0 3px 8px #18171412}
+.catalog-cover::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(128deg,transparent 25%,#ffffff06 39%,transparent 51%)}
+.catalog-sleeve{display:grid;grid-template-columns:13% minmax(0,1fr);height:100%;min-width:0;overflow:hidden}
+.catalog-label{position:relative;min-width:0;min-height:0;overflow:hidden;box-sizing:border-box;background:#eeefeb;color:#333c40;border-right:1px solid #27302a28}
+.catalog-label-brand{position:absolute;left:15%;top:1.85%;font:600 1.367cqw/1 Arial,sans-serif;white-space:nowrap}
+.catalog-label-brand small{display:block;margin-top:.78cqw;color:#787e80;font:400 .977cqw/1 Arial,sans-serif}
+.catalog-label-number{position:absolute;left:14.4%;top:6.55%;font:400 5.273cqw/1 Georgia,serif}
+.catalog-label-rule{position:absolute;left:15%;right:15%;top:14.35%;height:1px;background:#a8afb0}
+.catalog-label-title{position:absolute;left:30%;top:18.75%;height:40%;writing-mode:vertical-rl;overflow:hidden;font:400 2.15cqw/1.15 Arial,sans-serif;text-transform:uppercase;white-space:nowrap}
+.catalog-label-edition{position:absolute;left:11%;top:18.75%;writing-mode:vertical-rl;color:#787e80;font:.977cqw/1 Arial,sans-serif;white-space:nowrap}
+.catalog-label-info{position:absolute;left:15%;right:15%;top:64.75%;border-top:1px solid #adb2b2;padding-top:1.35cqw;color:#565e61;font:.977cqw/1.95 Arial,sans-serif;white-space:nowrap}
+.catalog-label-lines{position:absolute;left:15%;right:15%;top:72.56%;height:4%;background:linear-gradient(#aab0b0,#aab0b0) 0 0/88% 1px,linear-gradient(#aab0b0,#aab0b0) 0 20%/72% 1px,linear-gradient(#aab0b0,#aab0b0) 0 40%/80% 1px,linear-gradient(#aab0b0,#aab0b0) 0 100%/45% 1px;background-repeat:no-repeat}
+.catalog-label-marks{position:absolute;left:15%;right:15%;top:79.88%;height:1.46%}
+.catalog-label-marks::before,.catalog-label-marks::after{content:"";position:absolute;top:0;width:16%;height:100%;border-top:1px solid #4a555b}
+.catalog-label-marks::before{left:0;border-left:1px solid #4a555b}.catalog-label-marks::after{right:0;border-right:1px solid #4a555b}
+.catalog-label-color{position:absolute;left:9.1%;right:9.1%;bottom:1.17%;height:13.57%;background:var(--label-color)}
+.catalog-label-color small{position:absolute;left:10%;bottom:17%;color:#f2f1eb;font:1.172cqw/1 Arial,sans-serif;white-space:nowrap}
+.catalog-art{position:relative;min-width:0;min-height:0;overflow:hidden;background:var(--cover)}
+.catalog-art img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+
+/* Shared collection categories keep the directory and film pages in one system. */
+.collection-categories{display:flex;align-items:center;justify-content:center;gap:9px;flex-wrap:wrap}
+.collection-categories a{box-sizing:border-box;display:inline-flex;align-items:center;justify-content:center;min-height:40px;min-width:64px;padding:8px 20px;border:1px solid #b9b8ae;border-radius:999px;font-size:13px;line-height:1.4;color:#66695f;transition:background .2s,color .2s,border-color .2s}
+.collection-categories a:hover{border-color:#73776b;color:#232522;background:#e7e6df}
+.collection-categories a[aria-current=page]{background:#292d25;border-color:#292d25;color:#f2f0e9}
+.catalog-categories{margin:0 0 44px}
+.catalog-intro{margin-bottom:32px}
+.catalog-card[hidden],.catalog-grid[hidden],.catalog-empty[hidden]{display:none}
+.catalog-empty{padding:80px 20px 100px;border-top:1px solid #cbc9c1;border-bottom:1px solid #cbc9c1;text-align:center}
+.catalog-empty h2{font-size:28px;font-weight:400;margin:24px 0 18px}
+.catalog-empty>p:not(.eyeline){font-size:14px;line-height:1.8;color:#74766c}
+.catalog-empty>a{display:inline-block;margin-top:20px;padding-bottom:7px;border-bottom:1px solid #aaa99f;font-size:13px}
+@media(max-width:480px){.collection-categories{gap:7px}.collection-categories a{min-width:52px;padding:8px 14px;font-size:12px}.catalog-categories{margin-bottom:30px}.catalog-empty{padding:60px 10px 75px}.catalog-empty h2{font-size:24px}}
