@@ -119,3 +119,36 @@
 .board-lightbox[data-size=actual] .board-lightbox-view img{max-width:none;max-height:none;margin:0}
 @media(max-width:800px){.project-boards{margin-top:36px}.boards-heading{align-items:flex-start;flex-direction:column;gap:8px;margin-bottom:20px}.project-board{margin-bottom:30px}.board-lightbox-header{padding:14px 18px;gap:16px}.board-lightbox-actions{gap:12px}.board-lightbox-view{padding:12px}}
 @media(max-width:480px){.project-board figcaption{font-size:11px;gap:5px;flex-wrap:wrap}.board-zoom-hint{right:8px;bottom:8px;font-size:11px;padding:6px 9px}.board-lightbox{width:calc(100vw - 16px);height:calc(100svh - 16px);max-height:calc(100svh - 16px)}.board-lightbox-header{align-items:flex-start;flex-direction:column;gap:8px;padding:12px 14px}.board-lightbox-actions{justify-content:space-between;width:100%;gap:12px}.board-lightbox-actions button,.board-lightbox-actions a{min-height:38px;font-size:12px}.board-lightbox-view{padding:8px}.board-lightbox-header>div>span{font-size:10px}}
+
+/* Grouped work images share the existing board viewer. */
+.interactive-project:not(.has-video) .film-intro{margin-top:0;padding-top:25px}
+.film-description .project-credit{font-size:12px;line-height:1.8;margin-top:16px;color:#74766c}
+.project-playable{display:flex;align-items:center;gap:24px;flex-wrap:wrap;margin-top:28px}
+.playable-button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;box-sizing:border-box;min-height:52px;padding:14px 22px;background:#292d25;color:#f2f0e9;font-size:15px;line-height:1.6;border:1px solid #292d25}
+.playable-button:hover{background:#41483a;color:#fff}
+.project-playable>p{margin:0;font-size:12px;line-height:1.8;color:#65695e;max-width:540px}
+.project-media-section{margin-top:52px}
+.media-section-heading{border-bottom:1px solid #cbc9c1;padding-bottom:18px;margin-bottom:26px}
+.media-section-heading h2{font-size:18px;font-weight:500;line-height:1.5;margin:0}
+.media-section-heading p{max-width:820px;margin:12px 0 0;font-size:14px;line-height:1.95;color:#65695e}
+.section-boards{display:grid;grid-template-columns:minmax(0,1fr);gap:26px}
+.section-boards--gallery,.section-boards--comparison{grid-template-columns:repeat(2,minmax(0,1fr));align-items:start}
+.section-boards .project-board{min-width:0;margin:0}
+.section-boards--gallery .board-zoom-hint,.section-boards--comparison .board-zoom-hint{right:10px;bottom:10px;font-size:11px;padding:6px 9px}
+@media(max-width:800px){.project-media-section{margin-top:36px}.media-section-heading{margin-bottom:20px}.section-boards--gallery,.section-boards--comparison{grid-template-columns:minmax(0,1fr)}.section-boards{gap:24px}.project-playable{gap:14px}.playable-button{font-size:14px}.media-section-heading p{font-size:13px}}
+
+/* The five added works use deliberate image rows; the original PDF spreads stay unchanged. */
+.curated-project .project-media-section{max-width:1120px;margin:64px auto 0}
+.curated-project .media-section-heading{padding-bottom:16px;margin-bottom:30px}
+.curated-project .media-section-heading h2{font-size:19px}
+.curated-project .media-section-heading p{max-width:780px}
+.curated-project .section-boards--curated{grid-template-columns:minmax(0,1fr);gap:44px}
+.curated-project .media-row{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;align-items:start}
+.curated-project .media-row--pair{grid-template-columns:repeat(2,minmax(0,1fr))}
+.curated-project .media-row .project-board{width:100%;max-width:var(--media-width,1120px);margin:0 auto}
+.curated-project .media-row--pair .project-board{max-width:none}
+.curated-project .board-open{background:transparent}
+.curated-project .project-board figcaption{align-items:baseline;padding-top:12px;gap:16px}
+.curated-project .project-board figcaption>span:first-child{min-width:0}
+.curated-project .board-caption-action{flex-shrink:0;color:#767a70;white-space:nowrap;font-size:11px}
+@media(max-width:800px){.curated-project .project-media-section{margin-top:42px}.curated-project .media-section-heading{margin-bottom:24px}.curated-project .media-section-heading h2{font-size:17px}.curated-project .section-boards--curated{gap:32px}.curated-project .media-row,.curated-project .media-row--pair{grid-template-columns:minmax(0,1fr);gap:32px}.curated-project .project-board figcaption{gap:10px}.curated-project .board-caption-action{font-size:10px}}

@@ -1,4 +1,4 @@
-// 八个正式作品；预留专辑只在首页陈列，不创建详情页。
+// 十三个作品；预留专辑只在首页陈列，不创建详情页。
 window.PORTFOLIO = {
   "name": "叶世续",
   "brand": "IhsushI",
@@ -217,6 +217,139 @@ window.PORTFOLIO = {
         "poster": "assets/video-posters/volume-03.jpg"
       },
       "coverPreview": "assets/covers/dantean-spire-cover-preview.webp"
+    },
+    {
+      "id": "dodgeball",
+      "collections": [
+        "game"
+      ],
+      "title": "DODGEBALL",
+      "chinese": "躲避球",
+      "shortTitle": "躲避球",
+      "category": "关卡设计",
+      "format": "合作作品",
+      "mediaType": "interactive",
+      "color": "#9f3336",
+      "labelColor": "#9f3336",
+      "sleeveColor": "#431827",
+      "sleeveTopColor": "#a74d71",
+      "sleeveInk": "#f2e6e9",
+      "foil": "#c6dcbd",
+      "discType": "iridescent",
+      "cover": "assets/covers/dodgeball-cover.webp",
+      "coverPreview": "assets/covers/dodgeball-cover-preview.webp",
+      "summary": "第一人称线性投掷闯关游戏。围绕双手捡球与投掷，将新手教学、道具解谜和战斗串联在迷宫、长廊、中庭与仪式空间中，通过路线、视线和敌人配置组织逐步展开的探索流程。",
+      "creditNote": "与朋友合作；我负责关卡设计，朋友负责程序。",
+      "meta": [
+        [
+          "项目形式",
+          "合作作品"
+        ],
+        [
+          "本人职责",
+          "关卡设计"
+        ],
+        [
+          "游戏视角",
+          "第一人称"
+        ],
+        [
+          "核心机制",
+          "双手捡球与投掷"
+        ]
+      ],
+      "playable": {
+        "href": "https://jiejunfan2.itch.io/dodgeball",
+        "label": "打开试玩（itch.io）",
+        "note": "在新窗口打开试玩页面。"
+      },
+      "sections": [
+        {
+          "title": "投掷与空间",
+          "description": "用前方地标引导路线，在通道与中庭中安排投掷、道具解谜和战斗，逐步引入关卡中的操作与规则。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/dodgeball/entry-corridor.webp",
+              "fullSrc": "assets/works/dodgeball/entry-corridor-full.webp",
+              "label": "前通道 · 入口与方向",
+              "alt": "躲避球关卡的入口通道与前方开口",
+              "width": 1219,
+              "height": 700
+            },
+            {
+              "src": "assets/works/dodgeball/tall-corridor.webp",
+              "fullSrc": "assets/works/dodgeball/tall-corridor-full.webp",
+              "label": "长廊 · 纵向空间",
+              "alt": "躲避球第一人称画面中的高挑长廊与双手",
+              "width": 1689,
+              "height": 959
+            },
+            {
+              "src": "assets/works/dodgeball/courtyard-combat.webp",
+              "fullSrc": "assets/works/dodgeball/courtyard-combat-full.webp",
+              "label": "中庭 · 投掷与道具",
+              "alt": "躲避球中庭中的红色敌人、球与绿色门",
+              "width": 1621,
+              "height": 927
+            }
+          ]
+        },
+        {
+          "title": "路线与布局",
+          "description": "路线草图与室内布局，展示空间连接、探索分支和关卡节点的安排。",
+          "layout": "comparison",
+          "boards": [
+            {
+              "src": "assets/works/dodgeball/route-sketch.webp",
+              "fullSrc": "assets/works/dodgeball/route-sketch-full.webp",
+              "label": "路线草图 · 连接与节点",
+              "alt": "红色手绘关卡路线、节点标记和空间参考图",
+              "width": 840,
+              "height": 510
+            },
+            {
+              "src": "assets/works/dodgeball/indoor-layout.webp",
+              "fullSrc": "assets/works/dodgeball/indoor-layout-full.webp",
+              "label": "室内布局 · 分支空间",
+              "alt": "躲避球关卡的室内布局俯视截图",
+              "width": 1151,
+              "height": 989
+            }
+          ]
+        },
+        {
+          "title": "后段空间",
+          "description": "从室内走向开阔场地，再经长桥进入终段；以空间尺度和视线的变化组织后段节奏。",
+          "layout": "comparison",
+          "boards": [
+            {
+              "src": "assets/works/dodgeball/open-combat.webp",
+              "fullSrc": "assets/works/dodgeball/open-combat-full.webp",
+              "label": "开阔空间 · 战斗画面",
+              "alt": "躲避球开阔场地中的红色敌人与双手画面",
+              "width": 1551,
+              "height": 883
+            },
+            {
+              "src": "assets/works/dodgeball/bridge-layout.webp",
+              "fullSrc": "assets/works/dodgeball/bridge-layout-full.webp",
+              "label": "后段布局 · 长桥与场地",
+              "alt": "躲避球后段长桥和开阔场地的俯视布局截图",
+              "width": 1548,
+              "height": 497
+            }
+          ]
+        }
+      ],
+      "coverSaturation": 0.5,
+      "coverBrightness": 1.12,
+      "lightColor": "#a74d71",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      }
     },
     {
       "id": "thought-cabinet",
@@ -576,6 +709,454 @@ window.PORTFOLIO = {
         }
       ],
       "coverPreview": "assets/covers/ruins-garden-cover-preview.webp"
+    },
+    {
+      "id": "voice-republic",
+      "chinese": "声音共和",
+      "title": "Voice Republic Music Bar",
+      "shortTitle": "声音共和",
+      "collections": [
+        "architecture"
+      ],
+      "category": "音乐酒吧 / 室内建筑",
+      "format": "职业项目",
+      "color": "#473833",
+      "labelColor": "#857a6e",
+      "sleeveColor": "#5e554e",
+      "sleeveTopColor": "#857a6e",
+      "sleeveInk": "#eee8de",
+      "foil": "#aca493",
+      "discType": "vinyl",
+      "cover": "assets/covers/voice-republic-cover.webp",
+      "coverPreview": "assets/covers/voice-republic-cover-preview.webp",
+      "hero": {
+        "src": "assets/works/voice-republic/built-interior.webp",
+        "alt": "声音共和建成后的室内实景，吧台和沿街座位相互联系"
+      },
+      "summary": "位于广州的已落地音乐酒吧。沿街的吧台与等候区联系室内演出空间，吊顶、灯光和材料构造共同组织空间体验。在郭廖辉工作室担任项目建筑师，负责项目跟进推进与驻场监督。",
+      "meta": [
+        [
+          "项目地点",
+          "中国 · 广州"
+        ],
+        [
+          "项目角色",
+          "项目建筑师"
+        ],
+        [
+          "所属团队",
+          "郭廖辉工作室"
+        ],
+        [
+          "承担工作",
+          "项目跟进推进 · 驻场监督"
+        ]
+      ],
+      "mediaType": "image",
+      "sections": [
+        {
+          "title": "现场与空间组织",
+          "description": "建成实景展示沿街吧台与座位的日常使用状态；平面和开顶轴测补充演出、社交与后勤空间的组织关系。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/voice-republic/built-interior.webp",
+              "fullSrc": "assets/works/voice-republic/built-interior-full.webp",
+              "label": "建成实景 · 沿街吧台与座位",
+              "alt": "声音共和建成后的室内实景，吧台和沿街座位相互联系",
+              "width": 2100,
+              "height": 1575
+            },
+            {
+              "src": "assets/works/voice-republic/spatial-plan.webp",
+              "fullSrc": "assets/works/voice-republic/spatial-plan-full.webp",
+              "label": "团队图纸 · 平面组织",
+              "alt": "声音共和平面图，展示圆形舞台、观演区、吧台、沿街座位与后勤空间",
+              "width": 2100,
+              "height": 1506
+            },
+            {
+              "src": "assets/works/voice-republic/spatial-axon.webp",
+              "fullSrc": "assets/works/voice-republic/spatial-axon.webp",
+              "label": "方案模型 · 开顶轴测",
+              "alt": "声音共和方案的开顶轴测，展示演出空间与沿街吧台座位的关系",
+              "width": 1608,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "方案空间",
+          "description": "演出空间与沿街立面的方案效果，展示吊顶、灯光和座位之间的关系。以下图片均为方案效果图。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/voice-republic/scheme-stage.webp",
+              "fullSrc": "assets/works/voice-republic/scheme-stage.webp",
+              "label": "方案效果 · 演出空间与造型吊顶",
+              "alt": "声音共和演出空间的方案效果图，展示座位、舞台与造型吊顶，非实景",
+              "width": 1608,
+              "height": 977
+            },
+            {
+              "src": "assets/works/voice-republic/scheme-facade.webp",
+              "fullSrc": "assets/works/voice-republic/scheme-facade.webp",
+              "label": "方案效果 · 沿街立面",
+              "alt": "声音共和沿街玻璃立面及室外座位的方案效果图，非建成实景",
+              "width": 1608,
+              "height": 977
+            }
+          ]
+        },
+        {
+          "title": "构造深化",
+          "description": "通过节点与立面图，呈现雨棚、窗台、吧台和吊柜的构造协调。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/voice-republic/facade-section.webp",
+              "fullSrc": "assets/works/voice-republic/facade-section-full.webp",
+              "label": "团队深化图 · 立面与雨棚节点",
+              "alt": "声音共和外墙节点剖面，展示雨棚、门窗、吊顶与窗台构造的衔接",
+              "width": 1944,
+              "height": 2100
+            },
+            {
+              "src": "assets/works/voice-republic/bar-counter-detail.webp",
+              "fullSrc": "assets/works/voice-republic/bar-counter-detail-full.webp",
+              "label": "团队深化图 · 吧台与吊柜立面",
+              "alt": "声音共和团队吧台深化图，保留原图WALTER DAI制图署名，展示吧台与吊柜的材料和灯带构造",
+              "width": 2100,
+              "height": 1485
+            }
+          ]
+        },
+        {
+          "title": "驻场推进",
+          "description": "施工阶段围绕吊顶形态、支撑位置及管线协调进行现场核对。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/voice-republic/site-wide.webp",
+              "fullSrc": "assets/works/voice-republic/site-wide.webp",
+              "label": "施工现场 · 空间与吊顶核对",
+              "alt": "声音共和施工阶段的室内现场，吊顶管线与空间构造尚在实施过程中",
+              "width": 823,
+              "height": 617
+            },
+            {
+              "src": "assets/works/voice-republic/site-ceiling-check.webp",
+              "fullSrc": "assets/works/voice-republic/site-ceiling-check.webp",
+              "label": "驻场核对 · 吊顶构造与方案参照",
+              "alt": "声音共和吊顶现场、方案参照和构造剖面并列，用于核对造型与支撑关系",
+              "width": 1540,
+              "height": 1102
+            }
+          ]
+        }
+      ],
+      "lightColor": "#aca493",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "bodies-of-informatics",
+      "chinese": "信息之躯",
+      "shortTitle": "信息之躯",
+      "title": "Bodies of Informatics",
+      "collections": [
+        "exhibition"
+      ],
+      "category": "展陈设计",
+      "format": "合作项目",
+      "color": "#7b7b72",
+      "labelColor": "#9b977a",
+      "sleeveColor": "#9b977a",
+      "sleeveTopColor": "#b3b5b2",
+      "sleeveInk": "#f3f3ed",
+      "foil": "#ccd0da",
+      "discType": "transparent",
+      "cover": "assets/covers/bodies-of-informatics-cover.webp",
+      "coverPreview": "assets/covers/bodies-of-informatics-cover-preview.webp",
+      "hero": {
+        "src": "assets/works/bodies-of-informatics/on-site-overview.webp",
+        "alt": "信息之躯现场入口、米灰色标题墙、白色作品展墙与金属管架展桌",
+        "caption": "现场展陈"
+      },
+      "summary": "“信息之躯”是围绕数字信息与身体关系展开的展览合作项目。我负责展览排布、展墙分布和展桌设计，配合策展人与艺术家的展示需求，参与空间布置与展示载体的多轮推敲。",
+      "meta": [
+        [
+          "项目形式",
+          "合作展陈设计"
+        ],
+        [
+          "本人职责",
+          "展览排布 · 展墙分布 · 展桌设计"
+        ],
+        [
+          "策展人",
+          "金佐宁、李素超"
+        ],
+        [
+          "展示内容",
+          "现场呈现 · 早期方案"
+        ]
+      ],
+      "mediaType": "image",
+      "sections": [
+        {
+          "title": "现场与空间排布",
+          "description": "从入口与整体视角观察展墙、屏幕和展桌在空间中的分布。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/bodies-of-informatics/on-site-overview.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/on-site-overview-full.webp",
+              "label": "现场展陈 · 入口与整体空间",
+              "alt": "信息之躯现场入口、米灰色标题墙、白色作品展墙与金属管架展桌",
+              "width": 2100,
+              "height": 1181
+            },
+            {
+              "src": "assets/works/bodies-of-informatics/on-site-layout.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/on-site-layout-full.webp",
+              "label": "现场展陈 · 空间排布",
+              "alt": "信息之躯现场展陈，围合展墙、屏幕与多张展桌在空间中的位置关系",
+              "width": 2100,
+              "height": 1400
+            }
+          ]
+        },
+        {
+          "title": "展墙与展桌",
+          "description": "展墙与金属管架展桌的现场细节，呈现图册、文档与影像的观看关系。",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/bodies-of-informatics/on-site-wall-details.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/on-site-wall-details-full.webp",
+              "label": "现场展陈 · 展墙细节",
+              "alt": "信息之躯现场墙角处的艺术作品图像、文字与展墙布局，艺术作品署名保留在现场",
+              "width": 2100,
+              "height": 1400
+            },
+            {
+              "src": "assets/works/bodies-of-informatics/on-site-table-tray.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/on-site-table-tray-full.webp",
+              "label": "现场展陈 · 展桌与资料托盘",
+              "alt": "信息之躯金属管架展桌近景，透明资料托盘内陈列图册与方案平面资料",
+              "width": 2100,
+              "height": 1400
+            },
+            {
+              "src": "assets/works/bodies-of-informatics/on-site-table-display.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/on-site-table-display-full.webp",
+              "label": "现场展陈 · 展桌展示角度",
+              "alt": "信息之躯金属管架展桌、倾斜资料架与周边展墙之间的位置关系",
+              "width": 2100,
+              "height": 1400
+            }
+          ]
+        },
+        {
+          "title": "早期方案",
+          "description": "平面、轴测和空间效果记录早期方案的组织思路。这组资料与现场展陈呈现不同的场地形态与空间条件，作为方案推敲的补充展示。",
+          "layout": "comparison",
+          "boards": [
+            {
+              "src": "assets/works/bodies-of-informatics/early-plan.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/early-plan-full.webp",
+              "label": "早期方案 · 平面",
+              "alt": "信息之躯早期方案平面，非规则长条形场地内以斜向隔墙与黑帘组织展示分区",
+              "width": 2100,
+              "height": 1181
+            },
+            {
+              "src": "assets/works/bodies-of-informatics/early-axon.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/early-axon-full.webp",
+              "label": "早期方案 · 轴测",
+              "alt": "信息之躯早期方案轴测，表现展墙、黑帘与展示位置的空间组织",
+              "width": 2100,
+              "height": 1181
+            },
+            {
+              "src": "assets/works/bodies-of-informatics/early-render.webp",
+              "fullSrc": "assets/works/bodies-of-informatics/early-render-full.webp",
+              "label": "早期方案 · 空间效果",
+              "alt": "信息之躯早期方案空间效果图，展示斜向隔墙与黑帘分区的观看空间",
+              "width": 2100,
+              "height": 1181
+            }
+          ]
+        }
+      ],
+      "lightColor": "#ccd0da",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      }
+    },
+    {
+      "id": "animal-sculpture",
+      "collections": [
+        "other"
+      ],
+      "title": "Animal Sculpture",
+      "chinese": "动物雕塑",
+      "shortTitle": "动物雕塑",
+      "category": "雕塑",
+      "format": "本科作品",
+      "date": "2021",
+      "color": "#656464",
+      "labelColor": "#919090",
+      "sleeveColor": "#797978",
+      "sleeveTopColor": "#a3a3a3",
+      "sleeveInk": "#f0f0ed",
+      "foil": "#aaaaaa",
+      "discType": "vinyl",
+      "cover": "assets/covers/animal-sculpture-cover.webp",
+      "coverPreview": "assets/covers/animal-sculpture-cover-preview.webp",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "hero": {
+        "src": "assets/works/animal-sculpture/front.webp",
+        "alt": "山羊雕塑与佛龛形墙壁的正面"
+      },
+      "summary": "一只山羊卡在佛龛形的墙壁里。正面看，它像一尊安静的神像；转到背后，露出的屁股又暴露了受困的窘境。宁静与僵局，只隔着一个观看角度。",
+      "meta": [
+        [
+          "作品形式",
+          "雕塑"
+        ],
+        [
+          "项目性质",
+          "本科作品"
+        ],
+        [
+          "完成年份",
+          "2021"
+        ],
+        [
+          "展示对象",
+          "山羊与佛龛"
+        ]
+      ],
+      "mediaType": "image",
+      "sections": [
+        {
+          "title": "山羊与佛龛",
+          "description": "",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/animal-sculpture/front.webp",
+              "fullSrc": "assets/works/animal-sculpture/front-full.webp",
+              "label": "正面 · 山羊与佛龛",
+              "alt": "山羊雕塑：正面 · 山羊与佛龛",
+              "width": 2100,
+              "height": 1496
+            }
+          ]
+        },
+        {
+          "title": "侧面与背面",
+          "description": "",
+          "layout": "gallery",
+          "boards": [
+            {
+              "src": "assets/works/animal-sculpture/side.webp",
+              "fullSrc": "assets/works/animal-sculpture/side-full.webp",
+              "label": "侧面 · 墙壁与身体",
+              "alt": "山羊雕塑：侧面 · 墙壁与身体",
+              "width": 2100,
+              "height": 1667
+            },
+            {
+              "src": "assets/works/animal-sculpture/back.webp",
+              "fullSrc": "assets/works/animal-sculpture/back-full.webp",
+              "label": "背面 · 受困的姿态",
+              "alt": "山羊雕塑：背面 · 受困的姿态",
+              "width": 2100,
+              "height": 1671
+            }
+          ]
+        },
+        {
+          "title": "形体细节",
+          "description": "",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/animal-sculpture/head.webp",
+              "fullSrc": "assets/works/animal-sculpture/head-full.webp",
+              "label": "局部 · 面孔与龛壁",
+              "alt": "山羊雕塑：局部 · 面孔与龛壁",
+              "width": 2100,
+              "height": 1400
+            }
+          ]
+        }
+      ],
+      "lightColor": "#a3a3a3"
+    },
+    {
+      "id": "ommateum",
+      "collections": [
+        "other"
+      ],
+      "title": "OMMATEUM",
+      "chinese": "复眼",
+      "shortTitle": "复眼",
+      "category": "定格动画",
+      "format": "合作作品",
+      "mediaType": "video",
+      "color": "#694d43",
+      "labelColor": "#957d67",
+      "sleeveColor": "#8e7561",
+      "sleeveTopColor": "#ad967f",
+      "sleeveInk": "#f0e4d3",
+      "foil": "#ad967f",
+      "discType": "iridescent",
+      "cover": "assets/covers/ommateum-cover.webp",
+      "coverPreview": "assets/covers/ommateum-cover-preview.webp",
+      "summary": "以眼球角色和微缩室内布景展开的定格短片。通过逐格动作、灯光和日常物件，观察角色与屏幕之间的关系，将真实与虚拟的视线放进同一处生活场景，呈现被观看时的情绪变化。",
+      "meta": [
+        [
+          "项目形式",
+          "合作作品"
+        ],
+        [
+          "创作形式",
+          "定格动画"
+        ],
+        [
+          "影像时长",
+          "3:00"
+        ],
+        [
+          "场景",
+          "微缩室内布景"
+        ]
+      ],
+      "video": {
+        "src": "assets/works/ommateum/ommateum.mp4",
+        "poster": "assets/works/ommateum/poster.jpg",
+        "label": "OMMATEUM · 定格动画",
+        "durationLabel": "3:00"
+      },
+      "lightColor": "#ad967f",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      }
     }
   ],
   "pendingAlbum": {
@@ -599,5 +1180,5 @@ window.PORTFOLIO = {
     },
     "summary": "新的作品正在慢慢成形。这张唱片先留在这里，等下一段故事。"
   },
-  "revision": "20261008-architecture-fast-1"
+  "revision": "20261009-visual-refine-1"
 };
