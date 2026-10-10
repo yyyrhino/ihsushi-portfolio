@@ -1,4 +1,4 @@
-// 十三个作品；预留专辑只在首页陈列，不创建详情页。
+// 十五个作品；预留专辑只在首页陈列，不创建详情页。
 window.PORTFOLIO = {
   "name": "叶世续",
   "brand": "IhsushI",
@@ -64,7 +64,36 @@ window.PORTFOLIO = {
         "durationLabel": "16:44",
         "poster": "assets/video-posters/volume-06.jpg"
       },
-      "coverPreview": "assets/covers/grow-shrink-cover-preview.webp"
+      "coverPreview": "assets/covers/grow-shrink-cover-preview.webp",
+      "boards": [
+        {
+          "src": "media/game-spreads/volume-06/spread-01.webp",
+          "fullSrc": "media/game-spreads/volume-06/spread-01-full.webp",
+          "label": "核心机制与六阶段流程",
+          "alt": "尖尖奇旅完整原版对页：核心机制与六阶段流程，印刷页码4–5；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "4–5"
+        },
+        {
+          "src": "media/game-spreads/volume-06/spread-02.webp",
+          "fullSrc": "media/game-spreads/volume-06/spread-02-full.webp",
+          "label": "展厅、管道与廊道的关卡平面",
+          "alt": "尖尖奇旅完整原版对页：展厅、管道与廊道的关卡平面，印刷页码6–7；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "6–7"
+        },
+        {
+          "src": "media/game-spreads/volume-06/spread-03.webp",
+          "fullSrc": "media/game-spreads/volume-06/spread-03-full.webp",
+          "label": "设备间、制作思路与关卡节奏",
+          "alt": "尖尖奇旅完整原版对页：设备间、制作思路与关卡节奏，印刷页码8–9；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "8–9"
+        }
+      ]
     },
     {
       "id": "volume-01",
@@ -114,7 +143,36 @@ window.PORTFOLIO = {
         "durationLabel": "14:48",
         "poster": "assets/video-posters/volume-01.jpg"
       },
-      "coverPreview": "assets/covers/curse-of-time-cover-preview.webp"
+      "coverPreview": "assets/covers/curse-of-time-cover-preview.webp",
+      "boards": [
+        {
+          "src": "media/game-spreads/volume-01/spread-01.webp",
+          "fullSrc": "media/game-spreads/volume-01/spread-01-full.webp",
+          "label": "时空能力与六阶段流程",
+          "alt": "时之诅咒完整原版对页：时空能力与六阶段流程，印刷页码12–13；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "12–13"
+        },
+        {
+          "src": "media/game-spreads/volume-01/spread-02.webp",
+          "fullSrc": "media/game-spreads/volume-01/spread-02-full.webp",
+          "label": "双时空整体平面与局部路线",
+          "alt": "时之诅咒完整原版对页：双时空整体平面与局部路线，印刷页码14–15；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "14–15"
+        },
+        {
+          "src": "media/game-spreads/volume-01/spread-03.webp",
+          "fullSrc": "media/game-spreads/volume-01/spread-03-full.webp",
+          "label": "强化解密与双时空 Boss",
+          "alt": "时之诅咒完整原版对页：强化解密与双时空 Boss，印刷页码16–17；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "16–17"
+        }
+      ]
     },
     {
       "id": "volume-02",
@@ -165,7 +223,27 @@ window.PORTFOLIO = {
         "durationLabel": "08:52",
         "poster": "assets/video-posters/volume-02.jpg"
       },
-      "coverPreview": "assets/covers/phase-dagger-cover-preview.webp"
+      "coverPreview": "assets/covers/phase-dagger-cover-preview.webp",
+      "boards": [
+        {
+          "src": "media/game-spreads/volume-02/spread-01.webp",
+          "fullSrc": "media/game-spreads/volume-02/spread-01-full.webp",
+          "label": "瞬移机制与空间节奏拆解",
+          "alt": "相位匕首完整原版对页：瞬移机制与空间节奏拆解，印刷页码20–21；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "20–21"
+        },
+        {
+          "src": "media/game-spreads/volume-02/spread-02.webp",
+          "fullSrc": "media/game-spreads/volume-02/spread-02-full.webp",
+          "label": "探索、潜入与撤退关卡平面",
+          "alt": "相位匕首完整原版对页：探索、潜入与撤退关卡平面，印刷页码22–23；保留四边、原版文字、路线和图例。",
+          "width": 2300,
+          "height": 1632,
+          "printedPages": "22–23"
+        }
+      ]
     },
     {
       "id": "volume-03",
@@ -755,10 +833,18 @@ window.PORTFOLIO = {
       "mediaType": "image",
       "sections": [
         {
-          "title": "现场与空间组织",
-          "description": "建成实景展示沿街吧台与座位的日常使用状态；平面和开顶轴测补充演出、社交与后勤空间的组织关系。",
-          "layout": "gallery",
+          "title": "建成空间",
+          "description": "沿街座位与演出空间的建成实景，展示社交、观演与吊顶灯光的空间关系。",
+          "layout": "single",
           "boards": [
+            {
+              "src": "media/voice-supplement/built-stage.webp",
+              "fullSrc": "media/voice-supplement/built-stage-full.webp",
+              "label": "建成实景 · 演出空间与吊顶",
+              "alt": "声音共和演出空间实景，舞台、观演座位与排列的造型吊顶",
+              "width": 1800,
+              "height": 1350
+            },
             {
               "src": "assets/works/voice-republic/built-interior.webp",
               "fullSrc": "assets/works/voice-republic/built-interior-full.webp",
@@ -766,7 +852,14 @@ window.PORTFOLIO = {
               "alt": "声音共和建成后的室内实景，吧台和沿街座位相互联系",
               "width": 2100,
               "height": 1575
-            },
+            }
+          ]
+        },
+        {
+          "title": "平面与轴测",
+          "description": "平面和开顶轴测补充演出、社交与后勤空间的组织关系。",
+          "layout": "single",
+          "boards": [
             {
               "src": "assets/works/voice-republic/spatial-plan.webp",
               "fullSrc": "assets/works/voice-republic/spatial-plan-full.webp",
@@ -786,9 +879,55 @@ window.PORTFOLIO = {
           ]
         },
         {
-          "title": "方案空间",
-          "description": "演出空间与沿街立面的方案效果，展示吊顶、灯光和座位之间的关系。以下图片均为方案效果图。",
-          "layout": "gallery",
+          "title": "吧台与材料",
+          "description": "从正面与侧向观察吧台、吊柜、玻璃界面和灯光的建成关系。",
+          "layout": "comparison",
+          "boards": [
+            {
+              "src": "media/voice-supplement/built-bar-front.webp",
+              "fullSrc": "media/voice-supplement/built-bar-front-full.webp",
+              "label": "建成实景 · 吧台与吊柜",
+              "alt": "声音共和吧台正面实景，金属面板、木色台面与带绿色灯光的悬挂吊柜",
+              "width": 1800,
+              "height": 1350
+            },
+            {
+              "src": "media/voice-supplement/built-bar-glass.webp",
+              "fullSrc": "media/voice-supplement/built-bar-glass-full.webp",
+              "label": "建成实景 · 吧台与玻璃界面",
+              "alt": "声音共和吧台侧向实景，玻璃界面、绿色灯带与沿街座位之间的关系",
+              "width": 1800,
+              "height": 1350
+            }
+          ]
+        },
+        {
+          "title": "沿街立面",
+          "description": "日间与夜间的街道界面，呈现入口、玻璃与室内照明的使用状态。",
+          "layout": "comparison",
+          "boards": [
+            {
+              "src": "media/voice-supplement/built-facade-day.webp",
+              "fullSrc": "media/voice-supplement/built-facade-day-full.webp",
+              "label": "建成实景 · 日间沿街立面",
+              "alt": "声音共和沿街立面日间实景，入口、玻璃窗与建筑街道界面",
+              "width": 1800,
+              "height": 1350
+            },
+            {
+              "src": "media/voice-supplement/built-facade-night.webp",
+              "fullSrc": "media/voice-supplement/built-facade-night-full.webp",
+              "label": "建成实景 · 夜间沿街立面",
+              "alt": "声音共和夜间沿街立面实景，入口灯光与室内空间通过玻璃向街道显现",
+              "width": 1800,
+              "height": 1350
+            }
+          ]
+        },
+        {
+          "title": "方案参照",
+          "description": "演出空间与吧台一侧的方案效果，补充吊顶、玻璃与座位的设计关系。以下图片均为方案效果图。",
+          "layout": "single",
           "boards": [
             {
               "src": "assets/works/voice-republic/scheme-stage.webp",
@@ -799,10 +938,10 @@ window.PORTFOLIO = {
               "height": 977
             },
             {
-              "src": "assets/works/voice-republic/scheme-facade.webp",
-              "fullSrc": "assets/works/voice-republic/scheme-facade.webp",
-              "label": "方案效果 · 沿街立面",
-              "alt": "声音共和沿街玻璃立面及室外座位的方案效果图，非建成实景",
+              "src": "media/voice-supplement/scheme-bar-seating.webp",
+              "fullSrc": "media/voice-supplement/scheme-bar-seating.webp",
+              "label": "方案效果 · 吧台、玻璃与座位",
+              "alt": "声音共和方案效果图，吧台、玻璃界面和邻近座位的空间关系，非建成实景",
               "width": 1608,
               "height": 977
             }
@@ -811,7 +950,7 @@ window.PORTFOLIO = {
         {
           "title": "构造深化",
           "description": "通过节点与立面图，呈现雨棚、窗台、吧台和吊柜的构造协调。",
-          "layout": "gallery",
+          "layout": "single",
           "boards": [
             {
               "src": "assets/works/voice-republic/facade-section.webp",
@@ -833,17 +972,9 @@ window.PORTFOLIO = {
         },
         {
           "title": "驻场推进",
-          "description": "施工阶段围绕吊顶形态、支撑位置及管线协调进行现场核对。",
-          "layout": "gallery",
+          "description": "现场照片、方案参照和构造剖面共同用于核对吊顶形态、支撑位置与管线关系。",
+          "layout": "single",
           "boards": [
-            {
-              "src": "assets/works/voice-republic/site-wide.webp",
-              "fullSrc": "assets/works/voice-republic/site-wide.webp",
-              "label": "施工现场 · 空间与吊顶核对",
-              "alt": "声音共和施工阶段的室内现场，吊顶管线与空间构造尚在实施过程中",
-              "width": 823,
-              "height": 617
-            },
             {
               "src": "assets/works/voice-republic/site-ceiling-check.webp",
               "fullSrc": "assets/works/voice-republic/site-ceiling-check.webp",
@@ -860,7 +991,8 @@ window.PORTFOLIO = {
         "x": 0.5,
         "y": 0.5,
         "zoom": 1
-      }
+      },
+      "presentation": "curated"
     },
     {
       "id": "bodies-of-informatics",
@@ -999,6 +1131,278 @@ window.PORTFOLIO = {
         "y": 0.5,
         "zoom": 1
       }
+    },
+    {
+      "id": "irrational-trap",
+      "chinese": "非理性陷阱",
+      "shortTitle": "非理性陷阱",
+      "title": "The Irrational Trap",
+      "collections": [
+        "exhibition"
+      ],
+      "category": "虚拟展陈 / 视觉设计",
+      "format": "合作项目",
+      "color": "#75683e",
+      "labelColor": "#b69b46",
+      "sleeveColor": "#80734e",
+      "sleeveTopColor": "#c4b87a",
+      "sleeveInk": "#eee9dc",
+      "foil": "#8a92b2",
+      "lightColor": "#b8ae89",
+      "discType": "transparent",
+      "cover": "assets/covers/irrational-trap-cover.webp",
+      "coverPreview": "assets/covers/irrational-trap-cover-preview.webp",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "hero": {
+        "src": "assets/works/irrational-trap/virtual-hand.webp",
+        "alt": "虚拟展厅中张开的手部形体、深色展墙、帘幕与观看路径",
+        "caption": "虚拟展厅 · 手部形体与展墙"
+      },
+      "summary": "《非理性陷阱》是一次围绕亲密关系的线上群展。我是三人策展团队中的一员，参与概念讨论，并负责展陈设计、海报与整体空间视觉。手部形体、展墙与帘幕在虚拟展厅中组织观看路径，回应关系中的靠近与疏离。",
+      "meta": [
+        [
+          "项目形式",
+          "线上虚拟群展"
+        ],
+        [
+          "本人职责",
+          "策展协作 · 展陈设计 · 海报与空间视觉"
+        ],
+        [
+          "策展团队",
+          "张晓 · 官恩雨 · 叶世续"
+        ],
+        [
+          "展示内容",
+          "虚拟空间 · 展陈平面 · 视觉设计"
+        ]
+      ],
+      "mediaType": "image",
+      "presentation": "curated",
+      "sections": [
+        {
+          "title": "虚拟展厅",
+          "description": "手部形体与展墙构成观看中的停顿、分隔与转向。",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/irrational-trap/virtual-hand.webp",
+              "fullSrc": "assets/works/irrational-trap/virtual-hand.webp",
+              "label": "虚拟展厅 · 手部形体与展墙",
+              "alt": "虚拟展厅中张开的手部形体、深色展墙、帘幕与观看路径",
+              "width": 1856,
+              "height": 544
+            },
+            {
+              "src": "assets/works/irrational-trap/virtual-entry.webp",
+              "fullSrc": "assets/works/irrational-trap/virtual-entry.webp",
+              "label": "虚拟展厅 · 入口与标题墙",
+              "alt": "非理性陷阱虚拟展厅入口，弯曲的手部形体与展览标题墙",
+              "width": 1834,
+              "height": 462
+            },
+            {
+              "src": "assets/works/irrational-trap/virtual-gallery.webp",
+              "fullSrc": "assets/works/irrational-trap/virtual-gallery.webp",
+              "label": "虚拟展厅 · 图像与文本",
+              "alt": "深色展墙上的图像、文本及展厅空间",
+              "width": 1890,
+              "height": 480
+            },
+            {
+              "src": "assets/works/irrational-trap/virtual-end.webp",
+              "fullSrc": "assets/works/irrational-trap/virtual-end.webp",
+              "label": "虚拟展厅 · 转折与并置",
+              "alt": "两面展墙上的作品以及转角处的手部形体",
+              "width": 1912,
+              "height": 569
+            }
+          ]
+        },
+        {
+          "title": "空间组织",
+          "description": "从平面和俯视视角观察展区关系；帘幕为影像留出独立观看区域。",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/irrational-trap/exhibition-plan.webp",
+              "fullSrc": "assets/works/irrational-trap/exhibition-plan-full.webp",
+              "label": "展陈平面 · 作品、展墙与手部形体",
+              "alt": "非理性陷阱整体展览布置平面，标示作品、展墙和手部形体位置",
+              "width": 2100,
+              "height": 1480
+            },
+            {
+              "src": "assets/works/irrational-trap/virtual-overhead.webp",
+              "fullSrc": "assets/works/irrational-trap/virtual-overhead.webp",
+              "label": "虚拟展厅 · 空间俯视",
+              "alt": "俯视虚拟展厅中的展墙、地面作品与手部形体",
+              "width": 1878,
+              "height": 559
+            },
+            {
+              "src": "assets/works/irrational-trap/virtual-projection.webp",
+              "fullSrc": "assets/works/irrational-trap/virtual-projection.webp",
+              "label": "虚拟展厅 · 影像与帘幕",
+              "alt": "帘幕后独立影像展示区域及半透明画面",
+              "width": 1885,
+              "height": 557
+            }
+          ]
+        },
+        {
+          "title": "海报与形体",
+          "description": "最终海报与空间形体的组合研究。",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/irrational-trap/final-poster.webp",
+              "fullSrc": "assets/works/irrational-trap/final-poster-full.webp",
+              "label": "视觉设计 · 最终海报",
+              "alt": "非理性陷阱线上群展海报，灰色手形、蓝色文字与黄色纸张背景",
+              "width": 1403,
+              "height": 2100
+            },
+            {
+              "src": "assets/works/irrational-trap/hand-composition.webp",
+              "fullSrc": "assets/works/irrational-trap/hand-composition.webp",
+              "label": "空间形体 · 手部姿态组合",
+              "alt": "白色背景上不同姿态的手部形体组合研究",
+              "width": 1608,
+              "height": 977
+            }
+          ]
+        }
+      ],
+      "creditNote": "展出作品由参展艺术家创作。"
+    },
+    {
+      "id": "ocat-exhibition",
+      "chinese": "OCAT · 碎镜的流动",
+      "shortTitle": "OCAT 展陈设计",
+      "title": "Fluxion Smithereens",
+      "collections": [
+        "exhibition"
+      ],
+      "category": "展陈空间 / 展桌设计",
+      "format": "合作项目",
+      "color": "#5d5753",
+      "labelColor": "#aaa09a",
+      "sleeveColor": "#77716c",
+      "sleeveTopColor": "#b3aaa6",
+      "sleeveInk": "#f3eeeb",
+      "foil": "#ddd6d0",
+      "lightColor": "#c0b8b2",
+      "discType": "transparent",
+      "cover": "assets/covers/ocat-exhibition-cover.webp",
+      "coverPreview": "assets/covers/ocat-exhibition-cover-preview.webp",
+      "coverCrop": {
+        "x": 0.5,
+        "y": 0.5,
+        "zoom": 1
+      },
+      "hero": {
+        "src": "assets/works/ocat-exhibition/space-overview.webp",
+        "alt": "OCAT展陈方案中灰色展墙、白色成组展桌与影像、文献的展示关系",
+        "caption": "空间方案 · 展墙与成组展桌"
+      },
+      "summary": "《碎镜的流动：界限感知中重写的「现代性」》由金佐宁策展。我协助完成展陈空间设计，负责展桌设计及施工落地。展墙与成组展桌共同组织作品、文献和影像；板材构件组合的展桌，适应不同展示尺度。",
+      "meta": [
+        [
+          "展览机构",
+          "OCAT研究中心"
+        ],
+        [
+          "策展人",
+          "金佐宁"
+        ],
+        [
+          "本人职责",
+          "展陈空间 · 展桌设计 · 施工落地"
+        ],
+        [
+          "展示内容",
+          "空间方案 · 平面与动线 · 展桌构造"
+        ]
+      ],
+      "mediaType": "image",
+      "presentation": "curated",
+      "sections": [
+        {
+          "title": "展陈空间",
+          "description": "通过展墙与成组展桌组织作品、文献和影像的观看关系。",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/ocat-exhibition/space-overview.webp",
+              "fullSrc": "assets/works/ocat-exhibition/space-overview.webp",
+              "label": "空间方案 · 展墙与成组展桌",
+              "alt": "OCAT展陈方案中灰色展墙、白色成组展桌与影像、文献的展示关系",
+              "width": 1376,
+              "height": 924
+            },
+            {
+              "src": "assets/works/ocat-exhibition/table-groups.webp",
+              "fullSrc": "assets/works/ocat-exhibition/table-groups.webp",
+              "label": "空间方案 · 展桌尺度与观看关系",
+              "alt": "从另一视角观察不同高度展桌、影像屏幕与展墙的关系",
+              "width": 1520,
+              "height": 819
+            }
+          ]
+        },
+        {
+          "title": "平面与观看路径",
+          "description": "保留整体布置、展桌分组和尺寸，图纸可放大阅读。",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/ocat-exhibition/exhibition-plan.webp",
+              "fullSrc": "assets/works/ocat-exhibition/exhibition-plan-full.webp",
+              "label": "展陈平面 · 展桌分组与尺寸",
+              "alt": "展陈技术平面中展桌分组、作品位置与尺寸标注",
+              "width": 2100,
+              "height": 1487
+            },
+            {
+              "src": "assets/works/ocat-exhibition/visitor-route.webp",
+              "fullSrc": "assets/works/ocat-exhibition/visitor-route-full.webp",
+              "label": "观看路径 · 展桌与展区之间",
+              "alt": "展桌、展墙与观看动线的平面关系图",
+              "width": 2100,
+              "height": 1485
+            }
+          ]
+        },
+        {
+          "title": "展桌设计",
+          "description": "两种展桌以板材构件组合，适应不同位置的展示需求。",
+          "layout": "single",
+          "boards": [
+            {
+              "src": "assets/works/ocat-exhibition/table-construction-a.webp",
+              "fullSrc": "assets/works/ocat-exhibition/table-construction-a-full.webp",
+              "label": "展桌构造 · 板材构件与组合",
+              "alt": "第一种展桌的板材构件尺寸、组合模型与12毫米无色PC双层阳光板材料说明",
+              "width": 2100,
+              "height": 1303
+            },
+            {
+              "src": "assets/works/ocat-exhibition/table-construction-b.webp",
+              "fullSrc": "assets/works/ocat-exhibition/table-construction-b-full.webp",
+              "label": "展桌构造 · 转折构件与组合",
+              "alt": "第二种展桌的板材构件尺寸、组合模型与PC双层阳光板材料说明",
+              "width": 2100,
+              "height": 1303
+            }
+          ]
+        }
+      ],
+      "previewTitle": "碎镜的流动"
     },
     {
       "id": "animal-sculpture",
@@ -1180,5 +1584,5 @@ window.PORTFOLIO = {
     },
     "summary": "新的作品正在慢慢成形。这张唱片先留在这里，等下一段故事。"
   },
-  "revision": "20261009-visual-refine-1"
+  "revision": "20261010-game-spreads-preview-1"
 };

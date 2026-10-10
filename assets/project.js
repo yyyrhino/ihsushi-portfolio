@@ -30,7 +30,7 @@
   const number = String(index + 1).padStart(2, '0');
   const imageProject = p.mediaType === 'image';
   const interactiveProject = p.mediaType === 'interactive';
-  const curatedProject = ['animal-sculpture', 'bodies-of-informatics', 'voice-republic', 'ommateum', 'dodgeball'].includes(p.id);
+  const curatedProject = p.presentation === 'curated' || ['animal-sculpture', 'bodies-of-informatics', 'voice-republic', 'ommateum', 'dodgeball'].includes(p.id);
   const legacyBoards = Array.isArray(p.boards) ? p.boards.filter(board => board && board.src) : [];
   const sections = Array.isArray(p.sections) ? p.sections.map(section => ({
     title: section?.title || '作品图片',
@@ -72,16 +72,17 @@
     const displayWidth = Math.round(Math.min(naturalWidth, ratio < 1.1 ? 820 : 1120));
     const presentation = curatedProject ? ` ${boardIndex === 0 ? 'board--lead' : 'board--study'}` : '';
     const boardStyle = curatedProject ? ` style="--media-width:${displayWidth}px"` : '';
+    const leadImage = boardIndex === 0 && !video;
     const zoomHint = curatedProject ? '' : '<span class="board-zoom-hint" aria-hidden="true">放大查看 ↗</span>';
     const caption = curatedProject ? escape(label) : `${String(boardIndex + 1).padStart(2, '0')} / ${escape(label)}`;
-    return `<figure class="project-board${presentation}"${boardStyle}><button class="board-open" type="button" data-board-index="${boardIndex}" aria-label="放大图版：${escape(label)}"><img src="${escape(board.src)}" alt="${escape(board.alt || `${p.chinese}：${label}`)}"${dimensions} loading="${boardIndex === 0 ? 'eager' : 'lazy'}"${boardIndex === 0 ? ' fetchpriority="high"' : ''} decoding="async"><span class="board-image-error" hidden>图版暂时无法显示，点击尝试打开完整图片。</span>${zoomHint}</button><figcaption><span>${caption}</span>${board.printedPages ? `<span>原作品集第 ${escape(board.printedPages)} 页</span>` : ''}${curatedProject ? '<span class="board-caption-action" aria-hidden="true">点击放大 ↗</span>' : ''}</figcaption></figure>`;
+    return `<figure class="project-board${presentation}"${boardStyle}><button class="board-open" type="button" data-board-index="${boardIndex}" aria-label="放大图版：${escape(label)}"><img src="${escape(board.src)}" alt="${escape(board.alt || `${p.chinese}：${label}`)}"${dimensions} loading="${leadImage ? 'eager' : 'lazy'}"${leadImage ? ' fetchpriority="high"' : ''} decoding="async"><span class="board-image-error" hidden>图版暂时无法显示，点击尝试打开完整图片。</span>${zoomHint}</button><figcaption><span>${caption}</span>${board.printedPages ? `<span>原作品集第 ${escape(board.printedPages)} 页</span>` : ''}${curatedProject ? '<span class="board-caption-action" aria-hidden="true">点击放大 ↗</span>' : ''}</figcaption></figure>`;
   };
   const imageMedia = legacyBoards.length || (imageProject && !sections.length) ? `<section class="project-boards" aria-label="${escape(p.chinese)}完整图版"><div class="boards-heading"><h2>作品图版</h2><p>保留原版排布，点击图版可放大细读。</p></div>${legacyBoards.length ? legacyBoards.map(renderBoard).join('') : '<p class="boards-empty">图版正在整理。</p>'}</section>` : '';
   let sectionOffset = legacyBoards.length;
   const pairedImages = {
     'animal-sculpture': [['side.webp', 'back.webp']],
     'bodies-of-informatics': [['on-site-table-tray.webp', 'on-site-table-display.webp'], ['early-plan.webp', 'early-axon.webp']],
-    'voice-republic': [['scheme-stage.webp', 'scheme-facade.webp']],
+    'voice-republic': [['scheme-stage.webp', 'scheme-facade.webp'], ['scheme-stage.webp', 'scheme-bar-seating.webp'], ['built-bar-front.webp', 'built-bar-glass.webp'], ['built-facade-day.webp', 'built-facade-night.webp']],
     'dodgeball': [['tall-corridor.webp', 'courtyard-combat.webp']]
   };
   const renderCuratedRows = (sectionBoards, start) => {

@@ -320,7 +320,7 @@ function browsePosition(r){
 function remember(){try{sessionStorage.setItem('folio-case',JSON.stringify({offset,slot:active.index,id:projects[active.projectIndex].id,category}));}catch{}}
 function fillPreview(project){
  const section=categoryLabel(active.collections.includes(category)?category:active.collections[0]);
- $('#preview-category').textContent=project.pending?(section?section+' / 待更新':'COMING SOON'):[section,project.category,project.format].filter(Boolean).join(' / ');$('#preview-title').textContent=project.pending&&section?section+' · 待更新':project.chinese;$('#preview-chinese').textContent=project.title;$('#preview-meta').textContent=project.pending?'待更新':(project.date||'');$('#preview-summary').textContent=project.summary;
+ $('#preview-category').textContent=project.pending?(section?section+' / 待更新':'COMING SOON'):[section,project.category,project.format].filter(Boolean).join(' / ');$('#preview-title').textContent=project.pending&&section?section+' · 待更新':(project.previewTitle||project.chinese);$('#preview-chinese').textContent=project.title;$('#preview-meta').textContent=project.pending?'待更新':(project.date||'');$('#preview-summary').textContent=project.summary;
  const entry=$('#enter-project');entry.hidden=!!project.pending;
  if(project.pending)entry.removeAttribute('href');else{const query=new URLSearchParams({id:project.id,from:'album',transition:'1',v:window.PORTFOLIO.revision});if(category)query.set('category',category);entry.href='project.html?'+query;}
  $('.disc-hint').textContent=project.pending?'这张唱片还在制作中，内容待更新。':'悬停专辑，抽出更多唱片';
